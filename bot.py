@@ -121,8 +121,8 @@ async def start(client, message: Message):
                         "━━━━━━━━━━━━━━━━━━━━━\n"
                         "Click the buttons below to search.\n\n"
                         "**Credits:**\n"
-                        "- Created by [Rahat](https://t.me/RahatMx)\n"
-                        "- Powered by [RM Movie Flix](https://t.me/RM_Movie_Flix)",
+                        "- Created by [anuj kumar](https://t.me/anujedits76)\n"
+                        "- Powered by [anuj kumar](https://t.me/anujedits76)",
                         reply_markup=InlineKeyboardMarkup([
                             [InlineKeyboardButton("Search Here", switch_inline_query_current_chat=""),
                              InlineKeyboardButton("Go Inline", switch_inline_query="")]
@@ -171,8 +171,8 @@ async def download_video(client, callback: CallbackQuery):
             video_path = os.path.join("downloads", file)
             await callback.message.reply_video(video_path,
                                                caption=f"Here is your requested video.\n\n**Credits:**\n"
-                                                       "- Created by [Rahat](https://t.me/RahatMx)\n"
-                                                       "- Powered by [RM Movie Flix](https://t.me/RM_Movie_Flix)")
+                                                       "- Created by [anuj kumar](https://t.me/anujedits76)\n"
+                                                       "- Powered by [anuj kumar](https://t.me/anujedits76)")
             await send_log("Download Completed", f"File: {file} by @{callback.from_user.username}", client)
             os.remove(video_path)
             break
